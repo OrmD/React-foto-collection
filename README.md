@@ -1,8 +1,50 @@
-# React + Vite
+# PhotoGallery - Фотогалерея на React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Опис проекту
+PhotoGallery — це веб-додаток, що динамічно отримує дані через **fetch-запити** з **Mock API**. Додаток дозволяє переглядати зображення у зручному інтерфейсі з підтримкою **пагінації, категорій, пошуку** та модального вікна для перегляду зображень у збільшеному форматі.
 
-Currently, two official plugins are available:
+## Використані технології
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Основні технології:
+- **React** (збірка через Vite)
+- **HTML, CSS, JavaScript**
+- **SCSS** (змінні, міксіни, вкладеність, медіазапити)
+
+### React:
+- Використання **пропсів, useState, useEffect**
+- Розбиття на **компоненти**
+- Використання **JSX** та **тринарних операторів** для умовного рендерингу
+
+### JavaScript:
+- **fetch-запити** із `.then` та `.catch`
+- Методи масивів **map, includes, filter**
+- Створення масивів за допомогою `[...Array(5)]`
+
+### CSS:
+- **Flexbox, Grid** для структурування контенту
+- **hover, focus** для інтерактивності
+- **Медіазапити** для адаптивного дизайну
+
+## Можливості додатку
+- **Отримання та обробка даних** через API
+- **Динамічне оновлення контенту** в залежності від вибраних категорій та пошуку
+- **Підтримка пагінації** для зручного перегляду зображень
+- **Модальне вікно** для перегляду зображень у збільшеному форматі
+
+## Запуск проєкту
+1. Клонувати репозиторій:
+   ```sh
+   git clone https://github.com/your-repository.git
+   ```
+2. Перейти в папку з проєктом:
+   ```sh
+   cd photogallery
+   ```
+3. Встановити залежності:
+   ```sh
+   npm install
+   ```
+4. Запустити локальний сервер:
+   ```sh
+   npm run dev
+   ```
